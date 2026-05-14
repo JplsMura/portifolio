@@ -42,7 +42,9 @@
 .about__education-item { background-color: var(--container-color); padding: 1.5rem; border-radius: .75rem; border: 1px solid var(--border-color); transition: var(--transition-fast); }
 .about__education-item:hover { border-color: var(--first-color); }
 .about__education-title { display: block; font-size: var(--normal-font-size); font-weight: var(--font-semi-bold); color: var(--title-color); margin-bottom: .25rem; }
-.about__education-place { font-size: var(--small-font-size); color: var(--text-color-light); }
+.about__education-place { display: block; font-size: var(--small-font-size); color: var(--text-color); font-weight: var(--font-medium); margin-bottom: .25rem; }
+.about__education-date { display: block; font-size: var(--smaller-font-size); color: var(--first-color); margin-bottom: 1rem; }
+.about__education-desc { font-size: var(--small-font-size); color: var(--text-color-light); line-height: 1.5; }
 
 /* SKILLS CAROUSEL */
 .skills__carousel { width: 100%; overflow: hidden; background-color: var(--container-color); padding: 3rem 0; border-radius: 1.5rem; border: 1px solid var(--border-color); position: relative; }

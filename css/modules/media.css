@@ -3,7 +3,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .about__education-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -31,6 +31,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .about__education-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .hero__blob {
     width: 350px;
     height: 350px;
