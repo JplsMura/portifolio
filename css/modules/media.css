@@ -8,9 +8,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    margin-inline: auto;
-  }
   .hero__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -41,6 +38,12 @@
   .hero__blob-inner {
     width: 280px;
     height: 280px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__container {
+    padding-top: 8rem; /* Espaço extra para evitar qualquer atropelamento */
   }
 }
 

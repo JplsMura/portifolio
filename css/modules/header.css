@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: rgba(var(--body-color), 0.8);
+  background-color: hsla(var(--hue), 28%, 12%, 0.8); /* Corrigido para HSLA */
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
   transition: background-color var(--transition-normal), border-color var(--transition-normal);
@@ -47,40 +47,47 @@
 }
 
 @media screen and (max-width: 767px) {
-  .nav__toggle, .nav__close {
+  .nav__toggle {
     display: flex;
-    font-size: 1.25rem;
+    font-size: 1.75rem; /* Ícone do hambúrguer grande e visível */
     color: var(--title-color);
     cursor: pointer;
   }
 
   .nav__menu {
     position: fixed;
-    top: -100%;
+    top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
-    padding: 4rem 0 3rem;
-    box-shadow: 0 2px 16px hsla(var(--hue), 24%, 8%, .1);
-    transition: top var(--transition-normal);
-    z-index: var(--z-fixed);
+    height: 100vh; /* Altura total da tela */
+    background-color: var(--body-color); /* Fundo sólido para ocultar conteúdo abaixo */
+    padding-top: 8rem; /* Espaço pro logo e close não conflitar com links */
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-100%); /* Esconde o menu acima da tela */
+    transition: transform var(--transition-normal); /* Animação moderna e fluida */
+    z-index: 1000;
   }
 
   .nav__menu.show-menu {
-    top: 0;
+    transform: translateY(0); /* Menu desce e cobre a tela */
   }
 
   .nav__list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 1.5rem;
+    row-gap: 2.5rem;
   }
 
   .nav__close {
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     right: 1.5rem;
+    font-size: 2.5rem; /* Ícone de X bem visível */
+    color: var(--title-color);
+    cursor: pointer;
+    display: flex;
   }
 }
 
@@ -92,11 +99,25 @@
     display: flex;
     column-gap: 2rem;
   }
-}
-
 .nav__link {
   font-weight: var(--font-medium);
   transition: color var(--transition-fast);
+  font-size: var(--h3-font-size);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__link {
+    font-size: var(--normal-font-size);
+  }
+}
+
+/* Light Theme Menu Adjustments */
+.light-theme .header {
+    background-color: hsla(var(--hue), 60%, 98%, 0.8);
+}
+
+.light-theme .nav__menu {
+    background-color: var(--body-color); /* Garante que seja sólido no light também */
 }
 
 .nav__link:hover {

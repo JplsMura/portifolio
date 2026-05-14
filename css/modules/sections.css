@@ -1,14 +1,20 @@
 /* HERO */
 .hero__container {
-  padding-top: 2rem;
-  row-gap: 3rem;
+  padding-top: 4rem; /* Aumentado para dar respiro no mobile */
+  row-gap: 2.5rem;
 }
 .hero__data { text-align: center; }
 .hero__greeting { display: block; font-weight: var(--font-medium); margin-bottom: .5rem; color: var(--text-color); }
 .hero__name { font-size: var(--big-font-size); margin-bottom: .5rem; line-height: 1.2; }
 .hero__education { font-size: var(--h3-font-size); font-weight: var(--font-medium); color: var(--text-color); margin-bottom: 1.5rem; }
 .hero__description { margin-bottom: 2rem; max-width: 400px; margin-inline: auto; }
-.hero__buttons { display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; }
+.hero__buttons { 
+  display: flex; 
+  justify-content: center; 
+  gap: 1rem; 
+  margin-bottom: 2.5rem; 
+  flex-wrap: wrap; /* Permite quebrar linha em telas muito pequenas */
+}
 .hero__social { display: flex; justify-content: center; column-gap: 1.25rem; }
 .hero__social-link { display: inline-flex; font-size: 1.5rem; color: var(--title-color); background-color: var(--container-color); padding: .5rem; border-radius: .25rem; transition: var(--transition-fast); border: 1px solid var(--border-color); }
 .hero__social-link:hover { background-color: var(--first-color); color: #fff; border-color: var(--first-color); transform: translateY(-3px); }

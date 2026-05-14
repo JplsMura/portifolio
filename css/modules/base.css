@@ -51,7 +51,8 @@ img {
 
 .container {
   max-width: 1024px;
-  margin-inline: 1.5rem;
+  width: calc(100% - 3rem);
+  margin-inline: auto;
 }
 
 .grid {
@@ -81,10 +82,16 @@ img {
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
-  padding: 1rem 1.75rem;
+  padding: .75rem 1.25rem; /* Reduzido o padding padrão para caber melhor */
   border-radius: .5rem;
   font-weight: var(--font-medium);
   transition: var(--transition-fast);
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding: 1rem 1.75rem;
+  }
 }
 
 .button--primary {
