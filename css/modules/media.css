@@ -1,0 +1,55 @@
+@media screen and (min-width: 576px) {
+  .contact__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about__education-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-inline: auto;
+  }
+  .hero__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .hero__data {
+    text-align: left;
+  }
+  .hero__description {
+    margin-inline: 0;
+  }
+  .hero__buttons, .hero__social {
+    justify-content: flex-start;
+  }
+  .experience__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__blob {
+    width: 350px;
+    height: 350px;
+  }
+  .hero__blob-inner {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+    .skills__item-logo {
+        width: 150px;
+    }
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-150px * 21)); }
+    }
+}

@@ -1,0 +1,108 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: rgba(var(--body-color), 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-family: var(--title-font);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+  transition: color var(--transition-fast);
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
+
+.nav__actions {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.theme-toggle {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.theme-toggle:hover {
+  color: var(--first-color);
+}
+
+@media screen and (max-width: 767px) {
+  .nav__toggle, .nav__close {
+    display: flex;
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 4rem 0 3rem;
+    box-shadow: 0 2px 16px hsla(var(--hue), 24%, 8%, .1);
+    transition: top var(--transition-normal);
+    z-index: var(--z-fixed);
+  }
+
+  .nav__menu.show-menu {
+    top: 0;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggle, .nav__close {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    column-gap: 2rem;
+  }
+}
+
+.nav__link {
+  font-weight: var(--font-medium);
+  transition: color var(--transition-fast);
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.active-link {
+  color: var(--first-color);
+}

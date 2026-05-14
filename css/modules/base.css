@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  transition: color var(--transition-normal);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.highlight {
+  color: var(--first-color);
+}
+
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 6rem 2rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: .25rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-color-light);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  transition: var(--transition-fast);
+}
+
+.button--primary {
+  background-color: var(--first-color);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(100, 80, 240, 0.4);
+}
+
+.button--primary:hover {
+  background-color: var(--first-color-alt);
+  box-shadow: 0 4px 20px rgba(100, 80, 240, 0.6);
+  transform: translateY(-2px);
+}
+
+.button--ghost {
+  background-color: transparent;
+  color: var(--title-color);
+  border: 1px solid var(--border-color);
+}
+
+.button--ghost:hover {
+  border-color: var(--title-color);
+  transform: translateY(-2px);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  transition: transform var(--transition-fast);
+}
+
+.button:hover .button__icon {
+  transform: translateX(.25rem);
+}

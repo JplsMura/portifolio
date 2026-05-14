@@ -1,0 +1,9 @@
+/* =============== GOOGLE FONTS =============== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap');
+
+/* =============== CSS MODULES (COMPONENTS) =============== */
+@import url('./modules/variables.css');
+@import url('./modules/base.css');
+@import url('./modules/header.css');
+@import url('./modules/sections.css');
+@import url('./modules/media.css');
