@@ -8,6 +8,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .contact__info {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .hero__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -46,16 +49,16 @@
 
 @media screen and (max-width: 767px) {
   .hero__container {
-    padding-top: 8rem; /* Espaço extra para evitar qualquer atropelamento */
+    padding-top: 8rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-    .skills__item-logo {
-        width: 150px;
-    }
-    @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(calc(-150px * 21)); }
-    }
+  .skills__item-logo {
+    width: 150px;
+  }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-150px * 21)); }
+  }
 }
