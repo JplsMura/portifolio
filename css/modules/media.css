@@ -37,13 +37,8 @@
   .about__education-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .hero__blob {
-    width: 350px;
-    height: 350px;
-  }
-  .hero__blob-inner {
-    width: 280px;
-    height: 280px;
+  .hero__code {
+    max-width: 380px;
   }
 }
 

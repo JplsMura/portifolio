@@ -11,7 +11,7 @@
     <meta name="keywords" content="João Pedro, João Pedro Lima Santos, Desenvolvedor Fullstack, Backend Developer, Node.js, PHP, Laravel, Java, Spring Boot, Golang, Programador 6 anos, Portfolio">
     <meta name="author" content="João Pedro Lima Santos">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#6450f0">
+    <meta name="theme-color" content="#f6831e">
     <link rel="canonical" href="https://jpls.dev.br/">
 
     <!-- Open Graph / Facebook -->
@@ -44,7 +44,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- BoxIcons for icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -59,7 +59,7 @@
     <!-- HEADER -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">JP<span class="highlight">.</span></a>
+            <a href="#" class="nav__logo">jp<span class="highlight">.</span>dev</a>
             
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -117,10 +117,16 @@
                 </div>
                 
                 <div class="hero__image-wrapper">
-                    <div class="hero__blob">
-                        <div class="hero__blob-inner">
-                            <i class='bx bx-code-alt hero__blob-icon'></i>
-                        </div>
+                    <div class="hero__glow" aria-hidden="true"></div>
+                    <div class="hero__code" aria-hidden="true">
+                        <span class="hero__code-tab">joao_pedro.ts</span>
+                        <pre class="hero__code-body"><code><span class="hc-kw">const</span> <span class="hc-var">dev</span> = {
+  <span class="hc-key">nome</span>: <span class="hc-str">"João Pedro"</span>,
+  <span class="hc-key">cargo</span>: <span class="hc-str">"Backend/Fullstack"</span>,
+  <span class="hc-key">experiencia</span>: <span class="hc-str">"6+ anos"</span>,
+  <span class="hc-key">stack</span>: [<span class="hc-str">"PHP"</span>, <span class="hc-str">"Node"</span>, <span class="hc-str">"Go"</span>],
+  <span class="hc-key">disponivel</span>: <span class="hc-bool">true</span>,
+};</code></pre>
                     </div>
                 </div>
             </div>
@@ -129,6 +135,7 @@
         <!-- ABOUT -->
         <section class="about section" id="about">
             <div class="container">
+                <span class="section__eyebrow">01 — Sobre</span>
                 <h2 class="section__title">Sobre Mim</h2>
                 <span class="section__subtitle">Minha Introdução</span>
 
@@ -139,12 +146,10 @@
 
                     <div class="about__info">
                         <div>
-                            <i class='bx bx-award about__icon'></i>
                             <span class="about__info-title">06+</span>
                             <span class="about__info-name">Anos de experiência</span>
                         </div>
                         <div>
-                            <i class='bx bx-briefcase-alt about__icon'></i>
                             <span class="about__info-title">15+</span>
                             <span class="about__info-name">Projetos finalizados</span>
                         </div>
@@ -201,6 +206,7 @@
         <!-- CONTACT -->
         <section class="contact section" id="contact">
             <div class="container">
+                <span class="section__eyebrow">05 — Contato</span>
                 <h2 class="section__title">Contato</h2>
                 <span class="section__subtitle">Vamos conversar</span>
 

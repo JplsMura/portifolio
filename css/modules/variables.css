@@ -2,23 +2,28 @@
   --header-height: 4.5rem;
 
   /* Colors - Dark Theme (Default) */
-  --hue: 240;
-  --first-color: hsl(250, 69%, 61%);
-  --first-color-alt: hsl(250, 69%, 52%);
-  --first-color-light: hsl(250, 92%, 85%);
-  --first-color-lighten: hsl(250, 92%, 95%);
-  
-  --title-color: hsl(var(--hue), 8%, 95%);
-  --text-color: hsl(var(--hue), 8%, 75%);
-  --text-color-light: hsl(var(--hue), 8%, 65%);
-  --body-color: hsl(var(--hue), 28%, 12%);
-  --container-color: hsl(var(--hue), 24%, 16%);
-  --border-color: hsl(var(--hue), 24%, 25%);
+  --hue: 25;
+  --first-color: hsl(28, 92%, 54%);
+  --first-color-alt: hsl(28, 92%, 45%);
+  --first-color-light: hsl(28, 90%, 72%);
+  --first-color-lighten: hsl(28, 90%, 92%);
+
+  --title-color: hsl(var(--hue), 10%, 95%);
+  --text-color: hsl(var(--hue), 8%, 72%);
+  --text-color-light: hsl(var(--hue), 8%, 58%);
+  --body-color: hsl(var(--hue), 18%, 8%);
+  --container-color: hsl(var(--hue), 16%, 12%);
+  --border-color: hsl(var(--hue), 14%, 22%);
+
+  /* Radius */
+  --radius-sm: .25rem;
+  --radius-md: .375rem;
 
   /* Fonts and Typography */
   --body-font: 'Inter', sans-serif;
-  --title-font: 'Outfit', sans-serif;
-  
+  --title-font: 'Fraunces', serif;
+  --mono-font: 'JetBrains Mono', monospace;
+
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
